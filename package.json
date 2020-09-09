@@ -1,0 +1,16 @@
+{
+  "name": "content-visibility-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "server": "live-server --port=3001 --no-browser",
+    "start": "tach --config=tachometer.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "tachometer": "^0.5.2"
+  }
+}

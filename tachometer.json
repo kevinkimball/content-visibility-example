@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Polymer/tachometer/master/config.schema.json",
+  "sampleSize": 100,
+  "benchmarks": [
+    {
+      "url": "http://localhost:3001/default.html",
+      "browser": {
+        "name": "chrome",
+        "addArguments": ["use-mobile-user-agent", "allow-file-access-from-files"],
+        "windowSize": {
+          "width": 360,
+          "height": 640
+        }
+      },
+      "measurement": "global"
+    },
+    {
+      "url": "http://localhost:3001/using-content-visibility.html",
+      "browser": {
+        "name": "chrome",
+        "addArguments": ["use-mobile-user-agent", "allow-file-access-from-files"],
+        "windowSize": {
+          "width": 360,
+          "height": 640
+        }
+      },
+      "measurement": "global"
+    }
+  ]
+}
