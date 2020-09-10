@@ -1243,119 +1243,114 @@
     />
     <link
       rel="preload"
-      href="./Documentation_ _amp-form_ - amp.dev_files/v0.js"
+      href="/v0.js"
       as="script"
     />
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/v0.js"
+      src="/v0.js"
     ></script>
-    <!-- <script
-      async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-install-serviceworker-0.1.js"
-      custom-element="amp-install-serviceworker"
-    ></script> -->
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-consent-0.1.js"
+      src="/amp-consent-0.1.js"
       custom-element="amp-consent"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-geo-0.1.js"
+      src="/amp-geo-0.1.js"
       custom-element="amp-geo"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-analytics-0.1.js"
+      src="/amp-analytics-0.1.js"
       custom-element="amp-analytics"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-sidebar-0.1.js"
+      src="/amp-sidebar-0.1.js"
       custom-element="amp-sidebar"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-animation-0.1.js"
+      src="/amp-animation-0.1.js"
       custom-element="amp-animation"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-position-observer-0.1.js"
+      src="/amp-position-observer-0.1.js"
       custom-element="amp-position-observer"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-list-0.1.js"
+      src="/amp-list-0.1.js"
       custom-element="amp-list"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-autocomplete-0.1.js"
+      src="/amp-autocomplete-0.1.js"
       custom-element="amp-autocomplete"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-lightbox-0.1.js"
+      src="/amp-lightbox-0.1.js"
       custom-element="amp-lightbox"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-bind-0.1.js"
+      src="/amp-bind-0.1.js"
       custom-element="amp-bind"
     ></script>
     <script
       async=""
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-user-notification-0.1.js"
+      src="/amp-user-notification-0.1.js"
       custom-element="amp-user-notification"
     ></script>
     <script
       custom-element="amp-form"
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-form-0.1.js"
+      src="/amp-form-0.1.js"
       async=""
     ></script>
     <script
       custom-template="amp-mustache"
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-mustache-0.2.js"
+      src="/amp-mustache-0.2.js"
       async=""
     ></script>
     <script
       custom-element="amp-iframe"
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-iframe-0.1.js"
+      src="/amp-iframe-0.1.js"
       async=""
     ></script>
     <link
       rel="shortcut icon"
-      href="http://localhost:8080/static/img/favicon.png"
+      href="/static/img/favicon.png"
     />
     <link
       rel="preload"
-      href="./Documentation_ _amp-form_ - amp.dev_files/logo-openjsf.svg"
+      href="/static/img/logo-openjsf.svg"
       as="image"
       data-hero=""
     />
     <link
       rel="preload"
-      href="/noto-sans-v7-latin-regular.woff2"
+      href="/static/fonts/noto-sans-v7-latin-regular.woff2"
       as="font"
       crossorigin=""
     />
     <link
       rel="preload"
-      href="/noto-sans-v7-latin-700.woff2"
+      href="/static/fonts/noto-sans-v7-latin-700.woff2"
       as="font"
       crossorigin=""
     />
     <link
       rel="preload"
-      href="/poppins-v5-latin-700.woff2"
+      href="/static/fonts/poppins-v5-latin-700.woff2"
       as="font"
       crossorigin=""
     />
     <link
       rel="preload"
-      href="/fira-mono-v7-latin-500.woff2"
+      href="/static/fonts/fira-mono-v7-latin-500.woff2"
       as="font"
       crossorigin=""
     />
@@ -1455,6 +1450,10 @@
       }
     </script>
     <style amp-custom="">
+      .i-amphtml-element {
+        content-visibility: auto;
+      }
+
       @keyframes rotate {
         to {
           transform: rotate(360deg);
@@ -1466,9 +1465,9 @@
         font-weight: 400;
         font-display: swap;
         src: local("Noto Sans"), local("NotoSans"),
-          url(/noto-sans-v7-latin-regular.woff2)
+          url(/static/fonts/noto-sans-v7-latin-regular.woff2)
             format("woff2"),
-          url(/noto-sans-v7-latin-regular.woff)
+          url(/static/fonts/noto-sans-v7-latin-regular.woff)
             format("woff");
       }
       @font-face {
@@ -1477,9 +1476,9 @@
         font-weight: 700;
         font-display: swap;
         src: local("Noto Sans Bold"), local("NotoSans-Bold"),
-          url(/noto-sans-v7-latin-700.woff2)
+          url(/static/fonts/noto-sans-v7-latin-700.woff2)
             format("woff2"),
-          url(/noto-sans-v7-latin-700.woff)
+          url(/static/fonts/noto-sans-v7-latin-700.woff)
             format("woff");
       }
       @font-face {
@@ -1488,9 +1487,9 @@
         font-weight: 700;
         font-display: swap;
         src: local("Poppins Bold"), local("Poppins-Bold"),
-          url(/poppins-v5-latin-700.woff2)
+          url(/static/fonts/poppins-v5-latin-700.woff2)
             format("woff2"),
-          url(/poppins-v5-latin-700.woff)
+          url(/static/fonts/poppins-v5-latin-700.woff)
             format("woff");
       }
       @font-face {
@@ -1499,9 +1498,9 @@
         font-weight: 400;
         font-display: swap;
         src: local("Fira Mono"), local("FiraMono"),
-          url(/fira-mono-v7-latin-500.woff2)
+          url(/static/fonts/fira-mono-v7-latin-500.woff2)
             format("woff2"),
-          url(/fira-mono-v7-latin-500.woff)
+          url(/static/fonts/fira-mono-v7-latin-500.woff)
             format("woff");
       }
       * {
@@ -5346,7 +5345,7 @@
       data-script="amp-auto-lightbox"
       i-amphtml-inserted=""
       crossorigin="anonymous"
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-auto-lightbox-0.1.js"
+      src="/amp-auto-lightbox-0.1.js"
     ></script>
     <script
       async=""
@@ -5354,7 +5353,7 @@
       data-script="amp-loader"
       i-amphtml-inserted=""
       crossorigin="anonymous"
-      src="./Documentation_ _amp-form_ - amp.dev_files/amp-loader-0.1.js"
+      src="/amp-loader-0.1.js"
     ></script>
   </head>
   <body
@@ -7298,7 +7297,7 @@
                       frameborder="0"
                       allow=""
                       sandbox="allow-scripts"
-                      src="./Documentation_ _amp-form_ - amp.dev_files/saved_resource.html"
+                      src="/saved_resource.html"
                       style="z-index: 0"
                     ></iframe></i-amphtml-scroll-container
                 ></amp-iframe>
@@ -10511,7 +10510,7 @@ Access-Control-Expose-Headers: AMP-Redirect-To
                 class="i-amphtml-fill-content i-amphtml-replaced-content"
                 decoding="async"
                 alt="Logo of the OpenJS Foundation"
-                src="./Documentation_ _amp-form_ - amp.dev_files/logo-openjsf.svg"
+                src="/static/img/logo-openjsf.svg"
             /></amp-img>
           </div>
           <ul class="-j">
@@ -10758,13 +10757,5 @@ Access-Control-Expose-Headers: AMP-Redirect-To
         </button>
       </div>
     </amp-consent>
-    <!-- <amp-install-serviceworker
-      src="/serviceworker.js"
-      data-iframe-src="http://localhost:8080/serviceworker.html"
-      layout="nodisplay"
-      class="i-amphtml-layout-nodisplay i-amphtml-element"
-      hidden=""
-      i-amphtml-layout="nodisplay"
-    ></amp-install-serviceworker> -->
   </body>
 </html>
