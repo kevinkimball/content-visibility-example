@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script>
+      const po = new PerformanceObserver((entryList, po) => {
+        for (const entry of entryList.getEntries()) {
+          if (entry.entryType === "largest-contentful-paint") {
+            window.tachometerResult = entry.startTime;
+          }
+        }
+      });
+      po.observe({
+        type: 'largest-contentful-paint',
+        buffered: true,
+      });	
+    </script>
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+  </body>
+</html>
