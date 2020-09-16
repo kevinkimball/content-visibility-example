@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Polymer/tachometer/master/config.schema.json",
-  "sampleSize": 50,
+  "sampleSize": 100,
   "benchmarks": [
     {
       "url": "http://localhost:3001/homepage.html",

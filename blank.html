@@ -1,17 +1,16 @@
 <html>
   <head>
-    <script>
-      const po = new PerformanceObserver((entryList, po) => {
-        for (const entry of entryList.getEntries()) {
-          if (entry.entryType === "largest-contentful-paint") {
-            window.tachometerResult = entry.startTime;
-          }
-        }
-      });
-      po.observe({
-        type: 'largest-contentful-paint',
-        buffered: true,
-      });	
+    <script type="module">
+      import {getFirstConsistentlyInteractive} from './node_modules/tti-polyfill/src/index.js';
+      !function(){if('PerformanceLongTaskTiming' in window){var g=window.__tti={e:[]};
+      g.o=new PerformanceObserver(function(l){g.e=g.e.concat(l.getEntries())});
+      g.o.observe({entryTypes:['longtask']})}}();
+      function measure() {
+        getFirstConsistentlyInteractive({}).then((tti) => {
+          window.tachometerResult = tti;
+        });
+      }
+      window.setTimeout(measure, 1000);
     </script>
   </head>
   <body>
