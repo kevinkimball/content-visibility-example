@@ -15,7 +15,7 @@
       "measurement": "global"
     },
     {
-      "url": "http://localhost:3001/homepage-move-svg-defs.html",
+      "url": "http://localhost:3001/homepage-no-font-preload.html",
       "browser": {
         "name": "chrome",
         "addArguments": ["use-mobile-user-agent"],
