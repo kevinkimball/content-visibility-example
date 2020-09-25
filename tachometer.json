@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Polymer/tachometer/master/config.schema.json",
-  "sampleSize": 100,
+  "sampleSize": 200,
   "benchmarks": [
     {
       "url": "http://localhost:3001/homepage.html",
@@ -15,7 +15,7 @@
       "measurement": "global"
     },
     {
-      "url": "http://localhost:3001/blank.html",
+      "url": "http://localhost:3001/homepage-no-img.html",
       "browser": {
         "name": "chrome",
         "addArguments": ["use-mobile-user-agent"],
